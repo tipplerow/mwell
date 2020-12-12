@@ -1,0 +1,6 @@
+########################################################################
+# Shell aliases for MWELL project development.
+########################################################################
+alias mw="cd ${MWELL_HOME}"
+alias mws="cd ${MWELL_LIB_HOME}/src/main/java/mwell"
+alias mwt="cd ${MWELL_LIB_HOME}/src/test/java/mwell"

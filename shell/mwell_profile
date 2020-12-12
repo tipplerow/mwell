@@ -1,0 +1,21 @@
+########################################################################
+# Environment variables required to compile and run MWELL applications.
+########################################################################
+
+if [ -z "${GITHUB_ROOT}" ]
+then
+    echo "Environment variable GITHUB_ROOT is not set; exiting."
+    exit 1
+fi
+
+# GitHub project directory
+export MWELL_HOME=${GITHUB_ROOT}/mwell
+export MWELL_LIB_HOME=${GITHUB_ROOT}/mwell/mwell-lib
+
+# Database dump directory
+
+if [ -z "${TIPPLEROW_DATA_VAULT}" ]
+then
+    echo "Environment variable TIPPLEROW_DATA_VAULT is not set; exiting."
+    exit 1
+fi
